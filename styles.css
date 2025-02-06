@@ -1,0 +1,71 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  background-color: purple;
+  color: white;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.nav-bar {
+  background-color: black;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.nav-bar a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+}
+
+.about, .content {
+  background-color: #f0f0f0;
+  padding: 15px;
+  flex: 1;
+  margin: 10px;
+  min-width: 280px;
+}
+
+.image-placeholder {
+  background-color: gray;
+  height: 200px;
+  width: 100%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header, .nav-bar {
+    text-align: left;
+    padding-left: 10px;
+  }
+}
