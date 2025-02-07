@@ -90,7 +90,7 @@ main {
   }
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 375px) {
   body{
     align-items: center;
     justify-content: center;
